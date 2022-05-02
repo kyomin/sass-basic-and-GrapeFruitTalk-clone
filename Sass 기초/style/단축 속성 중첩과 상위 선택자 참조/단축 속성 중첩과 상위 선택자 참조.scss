@@ -1,0 +1,33 @@
+// css 문법
+// p {
+//   font-style: italic;
+//   font-weight: 900;
+//   font-size: 32px;
+// }
+
+// font, text, background 등은 css의 단축 속성이다.
+// Sass에서는 중첩을 이용해 단축 속성의 하위 속성을 그룹화 할 수 있다.
+// 즉, 위를 아래와 같이 scss의 단축 속성 중첩으로 표현할 수 있다.
+p {
+  font: {
+    style: italic;
+    weight: 900;
+    size: 32px;
+  }
+}
+
+// 기호 &를 사용해 상위 선택자를 참조할 수 있다.
+// 상위 선택자 참조는 의사클래스(가상클래스)를 선택하고자 할 때 특히 유용한 방법이다.
+.first-btn {
+  // &는 자신이 속한 상위 선택자를 가리킨다.
+  // 즉, 여기서 &는 .first-btn을 가리킨다.
+  &:hover { // .first-btn:hover
+    background-color: red;
+  }
+}
+
+.second-btn {
+  &:hover {
+    background-color: blue;
+  }
+}

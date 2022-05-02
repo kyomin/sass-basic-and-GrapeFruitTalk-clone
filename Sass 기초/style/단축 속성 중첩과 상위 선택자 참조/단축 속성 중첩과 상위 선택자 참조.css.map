@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAUA,AAAA,CAAC,CAAC;EAEE,UAAK,EAAE,MAAM;EACb,WAAM,EAAE,GAAG;EACX,SAAI,EAAE,IAAI;CAEb;;AAID,AAGE,UAHQ,AAGP,MAAM,CAAC;EACN,gBAAgB,EAAE,GAAG;CACtB;;AAGH,AACE,WADS,AACR,MAAM,CAAC;EACN,gBAAgB,EAAE,IAAI;CACvB",
+    "sources": [
+        "단축 속성 중첩과 상위 선택자 참조.scss"
+    ],
+    "names": [],
+    "file": "단축 속성 중첩과 상위 선택자 참조.css"
+}

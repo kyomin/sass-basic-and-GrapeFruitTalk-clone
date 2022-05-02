@@ -1,0 +1,14 @@
+p {
+  font-style: italic;
+  font-weight: 900;
+  font-size: 32px;
+}
+
+.first-btn:hover {
+  background-color: red;
+}
+
+.second-btn:hover {
+  background-color: blue;
+}
+/*# sourceMappingURL=단축 속성 중첩과 상위 선택자 참조.css.map */
