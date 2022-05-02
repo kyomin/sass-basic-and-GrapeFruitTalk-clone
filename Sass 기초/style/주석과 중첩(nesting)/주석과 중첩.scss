@@ -1,0 +1,24 @@
+/*
+  원래 CSS가 가지고 있는 주석 형태이다.
+  이 주석 안에는 내용을 얼마든지 작성할 수 있다.
+*/
+
+// scss에서 한 라인 단위로 작성할 수 있는 주석이다.
+// css에서는 가지고 있지 않으므로 scss가 css로 변환될 때 사라진다.
+
+.container {
+  background-color: yellow;
+
+  // scss의 중첩 규칙에 의해 기존 css의 '.container h1'으로 컴파일 될 것이다.
+  h1 {
+    color: red;
+  }
+
+  p {
+    color: tomato;
+
+    span {
+      color: blue;
+    }
+  }
+}

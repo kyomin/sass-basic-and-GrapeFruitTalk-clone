@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": ";AAAA;;;EAGE;AAKF,AAAA,UAAU,CAAC;EACT,gBAAgB,EAAE,MAAM;CAczB;;AAfD,AAIE,UAJQ,CAIR,EAAE,CAAC;EACD,KAAK,EAAE,GAAG;CACX;;AANH,AAQE,UARQ,CAQR,CAAC,CAAC;EACA,KAAK,EAAE,MAAM;CAKd;;AAdH,AAWI,UAXM,CAQR,CAAC,CAGC,IAAI,CAAC;EACH,KAAK,EAAE,IAAI;CACZ",
+    "sources": [
+        "주석과 중첩.scss"
+    ],
+    "names": [],
+    "file": "주석과 중첩.css"
+}
