@@ -1,0 +1,33 @@
+/*
+  믹스인은 인자를 통해 스타일 속성을 전달받아 선언문에 적용한다.
+  이와 비슷한 맥락으로, 믹스인은 스타일 블록을 전달받아 선언문에 적용할 수 있다.
+
+  Sass의 @content 지시자를 이용하면 스타일 블록 전체를 믹스인으로 넘길 수 있다.
+  믹스인 정의 시 스타일 블록을 전달받을 위치에 @content 지시자를 삽입하고, 믹스인 호출시 중괄호로 표현된 스타일을 이어 붙인다.
+
+  인자와 스타일 블록을 모두 전달받는 형태의 믹스인을 정의할 수 있다.
+*/
+
+@mixin btn-style($hv-color) {
+  @content; // 믹스인 호출 시 {}로 묶여 전달한 스타일 블록이 여기에 삽입된다!
+  width: 100px;
+  height: 25px;
+
+  &:hover {
+    background-color: $hv-color;
+  }
+}
+
+.one {
+  @include btn-style(orange) {
+    color: white;
+    background-color: tomato;
+  }
+}
+
+.two {
+  @include btn-style(green) {
+    color: red;
+    background-color: teal;
+  }
+}
