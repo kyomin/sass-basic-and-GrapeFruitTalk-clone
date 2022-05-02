@@ -1,0 +1,25 @@
+@charset "UTF-8";
+/*
+  페이지를 디자인하다 보면, 한 클래스가 다른 클래스의 스타일을 그대로 가져야 하는 경우가 종종 발생한다.
+  Sass의 @extend 지시자를 사용하면 기존 선택자에 선언된 스타일을 함께 사용하고,
+  추가 스타일을 덮어쓰는 형태의 스타일시트를 빠르게 작성할 수 있다.
+
+  자체적으로는 사용되지 않고, 오직 선언문을 '확장'시킬 목적으로만 사용되는 '유령 클래스'를 만들 수 있다.
+  이때 기호 '%'를 사용한다.
+
+  [ 믹스인과의 차이점? ]
+  오직 스타일을 재사용한다는 관점만 생각하면 별반 다를 게 없다.
+  하지만 CSS로의 컴파일 결과 면에서 큰 차이를 보이고, 문법이 달라 스타일을 관리하는 방식도 다르다.
+*/
+.good-message, .bad-message {
+  padding: 8px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  background: #5f0;
+}
+
+.bad-message {
+  background: #f05;
+}
+/*# sourceMappingURL=main.css.map */
