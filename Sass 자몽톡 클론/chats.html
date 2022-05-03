@@ -4,7 +4,31 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
+		<link rel="stylesheet" href="css/main.css" />
+		<link rel="icon" href="img/grapefruit.png" />
+		<title>자몽톡 - 채팅 목록</title>
 	</head>
-	<body></body>
+	<body>
+		<!--  
+			nav, header와 같은 시멘틱 태그는 모두 div 태그와 같은 기능을 수행하는 태그이다.
+			말 그대로 의미론적인 태그이다.
+			태그가 의미를 가지는 것은 검색 엔진이나 그 외의 기계적인 동작들이 웹페이지를 쉽게 이해할 수 있게 한다.
+		-->
+		<nav class="nav">
+			<ul class="nav__list">
+				<li class="nav__btn">1</li>
+				<li class="nav__btn active">2</li>
+			</ul>
+		</nav>
+
+		<div class="chats">
+			<header class="header">
+				<h3 class="header__title">채팅</h3>
+				<div class="header__menu">
+					<span>1</span>
+					<span>2</span>
+				</div>
+			</header>
+		</div>
+	</body>
 </html>
