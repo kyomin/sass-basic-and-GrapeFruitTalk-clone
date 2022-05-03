@@ -1,0 +1,17 @@
+/*
+  최근의 모든 브라우저들은 웹 서체(Web Font)라는 것을 지원하며 사이트를 볼 때 다운되는 서체를 웹 폰트라고 한다.
+  웹 폰트 또한 'font-family' 속성을 사용하지만, '@font-face' 지시어(directive)라는 CSS 명령어를 사용해서 웹 브라우저에게 해덩 서체를 다운로드할 것을 알리면서 사용할 수 있다.
+  
+  사용자는 이미 검증된 서체만 사용하는 방법(대부분의 컴퓨터에 설치된 기본 서체만 사용하는 방법)을 택할 수도 있고,
+  아니면 아래와 같이 웹 폰트를 사용해 더 많은 폰트 가운데 하나를 골라 쓰는 방법을 택할 수도 있다.
+
+  'font-family' 속성을 사용해 서체를 지정하더라도, 방문자가 반드시 지정한 서체로 표시되는 페이지를 보게 되리라는 보장은 없다.
+  해당 폰트는 방문자의 컴퓨터에 이미 설치된 상태여야 한다.
+  그래서 일반적으로 웹 폰트를 사용할 때는 웹 사이트의 서버에 올려놓고 사용하는 경우가 많다.
+*/
+@font-face {
+  font-family: 'NanumBarunpen';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumBarunpen.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
