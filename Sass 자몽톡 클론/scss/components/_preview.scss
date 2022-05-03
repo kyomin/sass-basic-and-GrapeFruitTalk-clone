@@ -1,0 +1,38 @@
+.preview {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  padding: 16px;
+  background-color: #fff;
+
+  .preview__pic {
+    @include set-box-size(50px, 50px, 18px);
+
+    background: $main-color;
+    margin-right: 10px;
+  }
+
+  .preview__nick {
+    margin: 5px;
+    font-size: 0.9em;
+  }
+
+  .preview__message {
+    overflow: hidden; // 내용이 컨테이너를 넘어가면 감춘다
+    width: 50vw;  // Viewport 너비의 50%
+    margin: 5px;
+    font-size: 0.8em; // em: 부모 컨테이너 폰트 사이즈의 0.8배
+    color: #aeaeae;
+    text-overflow: ellipsis;  // 텍스트가 넘칠 경우 ...으로 표시한다
+    white-space: nowrap;  // 공백 여러개가 있는 경우 하나로 처리하고, 오른쪽 끝에서 줄 바꿈을 하지 않고 박스를 벗어나 표시된다.
+  }
+
+  .preview__time {
+    position: absolute; // 상위 요소 중에서 position이 relative인 가장 가까운 요소를 기준으로
+    top: 10px;
+    right: 16px;
+    font-size: 0.8em;
+    color: #aeaeae;
+  }
+}
