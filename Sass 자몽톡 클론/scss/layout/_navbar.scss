@@ -1,13 +1,14 @@
 .nav__list {  // 레이아웃 왼쪽에 고정시킨다.
+  @include set-box-size(100%, 70px);
+
   position: fixed;
   top: 0;
   left: 0;
   margin: 0;
   padding: 0;
-  width: 70px;
-  height: 100%;
   background-color: #f1f1f1;
   list-style-type: none;
+  z-index: 20;
 
   .nav__btn {
     padding: 16px 0;
