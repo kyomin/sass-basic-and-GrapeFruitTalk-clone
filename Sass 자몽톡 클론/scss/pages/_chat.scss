@@ -1,0 +1,20 @@
+.chat {
+  @include set-box-size(100%, 100%);
+
+  background-color: $main-color;
+
+  .chat-screen {
+    overflow: auto;
+    height: calc(100% - 160px);
+
+    .chat-screen__bar {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    .chat-screen__bubbles {
+      padding: 0;
+      list-style-type: none;
+    }
+  }
+}
